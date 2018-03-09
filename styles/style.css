@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  width: 100%;
+  background-color: #00BFFF;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+a{
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Coiny', cursive;
+}
+nav ul li a:hover{
+  border-bottom: solid white 4px;
+  box-sizing: border-box;
+  background-color: #1E90FF;
+}
+.active {
+  border-bottom: solid white 4px;
+  background-color: #1E90FF;
+}
+.ind{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width,height, background-color;
+  transition-duration: 2s;
+}
+.ind:hover{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.sect1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width,height, background-color, border;
+  transition-duration: 1s;
+  transition-delay: 1s,2s,2s,3s;
+}
+.sect1:hover{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: solid black 5px;
+  box-sizing: border-box;
+}
+.sect2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition-duration: 1s;
+  transition-property: width, height,background-color;
+  transition-delay: 1s,1s,2s;
+}
+.sect2>article{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: yellow;
+  transition-duration: 1s;
+  transition-property: width, height, background-color,border-radius;
+  transition-delay: 3s, 3s,4s, 4s;
+}
+.sect2:hover{
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+}
+.sect2:hover article{
+  width: 130px;
+  height: 130px;
+  background-color: #7FFF00;
+  border-radius: 50%;
+}
+.sect3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+  width: 250px;
+  height: 250px;
+  transition-duration: 1s;
+  transition-property: width, height, background-color;
+  transition-delay: 0s, 1s,2s;
+}
+.sect3:hover{
+  width: 350px;
+  height: 350px;
+  background-color: #00FFFF;
+}
+.sect3>article:first-child{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  width: 80px;
+  height: 80px;
+  transition-duration: 1s;
+  transition-property: left, background-color, border-radius;
+  transition-delay: 3s, 4s, 4s;
+}
+.sect3:hover article:first-child{
+  position: absolute;
+  left: 30px;
+  background-color: pink;
+  border-radius: 50%;
+}
+.sect3>article:nth-child(2){
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+  width: 80px;
+  height: 80px;
+  transition-duration: 1s;
+  transition-property: right, background-color, border-radius;
+  transition-delay: 3s,4s,4s;
+}
+.sect3:hover article:nth-child(2){
+  position: absolute;
+  right: 30px;
+  background-color: green;
+  border-radius: 50%;
+}
+.sect4{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #000080;
+  transition-duration: 1s;
+  transition-property: background-color,width,height;
+  transition-delay: 0s, 1s,2s;
+}
+.sect4:hover{
+  background-color: #00BFFf;
+  width: 500px;
+  height: 500px;
+
+}
+.sect4>article:first-child{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFA500;
+  width: 100px;
+  height: 100px;
+  transition-duration: 1s;
+  transition-property: top, right,border-radius;
+  transition-delay: 3s,3s,4s;
+}
+.sect4:hover article:first-child{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+}
+.sect4>article:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #FFA500;
+  width: 100px;
+  height: 100px;
+  transition-duration: 1s;
+  transition-property: border-radius,background-color;
+  transition-delay: 5s, 6s;
+}
+.sect4:hover article:nth-child(2){
+  border-radius: 50%;
+  background-color: #FF1493;
+}
+.sect4>article:nth-child(3){
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #FFA500;
+  width: 100px;
+  height: 100px;
+  transition-duration: 1s;
+  transition-property: left, bottom,border-radius;
+  transition-delay: 3s,3s,4s;
+}
+.sect4:hover article:nth-child(3){
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+}
+.sect5{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #FF0000;
+}
