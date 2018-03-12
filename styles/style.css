@@ -238,20 +238,104 @@ nav ul li a:hover{
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: #FF0000;
+  background-color: yellow;
   transition-duration: 1s;
-  transition-property: width, height;
-  transition-delay: 0s, 0s;
+  transition-property: width, height, border-top, border-right,border-bottom,border-left ;
+  transition-delay: 0s, 0s, 1s,2s,3s,4s;
 }
 .sect5:hover{
   width: 400px;
   height: 400px;
+  box-sizing: border-box;
+  border-top: solid 5px blue;
+  border-right: solid 5px #00FFFF	;
+  border-bottom: solid 5px #7CFC00	;
+  border-left: solid 5px #FF0000	;
 }
 .sect5>article:first-child{
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   top: 0;
   left: 0;
-  background-color: blue;
+  background-color:black;
+  transition-duration: 1s;
+  transition-property: margin-top,margin-left,border-radius;
+  transition-delay: 5s,5s,6s;
+}
+.sect5:hover>article:first-child{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.sect5>article:nth-child(2){
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  right: 0;
+  background-color:black;
+  transition-duration: 1s;
+  transition-property: margin-top,margin-right,border-radius;
+  transition-delay: 7s,7s,8s;
+}
+.sect5:hover>article:nth-child(2){
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.sect5>article:nth-child(3){
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  right: 0;
+  background-color:black;
+  transition-duration: 1s;
+  transition-property: margin-bottom,margin-right,border-radius;
+  transition-delay: 9s,9s,10s;
+}
+.sect5:hover>article:nth-child(3){
+  position: absolute;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.sect5>article:nth-child(4){
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+  transition-duration: 1s;
+  transition-property: margin-left,margin-bottom,border-radius;
+  transition-delay: 11s,11s,12s;
+}
+.sect5:hover>article:nth-child(4){
+  position: absolute;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.sect5>article:nth-child(5){
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+  transition-duration: 1s;
+  transition-property: border-radius,background-color;
+  transition-delay: 13s,14s;
+}
+.sect5:hover>article:nth-child(5){
+  position: absolute;
+  border-radius: 50%;
+  background-color: #800080;
 }
