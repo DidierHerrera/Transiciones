@@ -339,3 +339,211 @@ nav ul li a:hover{
   border-radius: 50%;
   background-color: #800080;
 }
+.sect6{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: yellow;
+  transition-duration: 1s;
+  transition-property: width, height, border-top, border-right,border-bottom,border-left ;
+  transition-delay: 0s, 0s, 1s,;
+}
+.sect6:hover{
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border:solid 5px black;
+}
+.sect6>article:first-child{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color:blue;
+  transition-duration: 1s;
+  transition-property:margin-top,margin-left,border-radius;
+  transition-delay: 2s,2s,4s;
+}
+.sect6:hover>article:first-child{
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 150px;
+  border-radius: 50%;
+}
+.sect6>article:nth-child(2){
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  background-color:blue;
+  transition-duration: 1s;
+  transition-property: margin-top,margin-right,border-radius;
+  transition-delay: 2s,2s,4s;
+}
+.sect6:hover>article:nth-child(2){
+  position: absolute;
+  margin-top: 150px;
+  margin-right: 150px;
+  border-radius: 50%;
+}
+.sect6>article:nth-child(3){
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  background-color:blue;
+  transition-duration: 1s;
+  transition-property: margin-bottom,margin-right,border-radius;
+  transition-delay: 2s,2s,4s;
+}
+.sect6:hover>article:nth-child(3){
+  position: absolute;
+  margin-bottom: 150px;
+  margin-right: 150px;
+  border-radius: 50%;
+}
+.sect6>article:nth-child(4){
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  background-color:blue;
+  transition-duration: 1s;
+  transition-property: margin-left,margin-bottom,border-radius;
+  transition-delay: 2s,2s,4s;
+}
+.sect6:hover>article:nth-child(4){
+  position: absolute;
+  margin-bottom: 150px;
+  margin-left: 150px;
+  border-radius: 50%;
+}
+.sect6>article:nth-child(5){
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: blue;
+  transition-duration: 1s;
+  transition-property: border-radius, width,height,background-color;
+  transition-delay: 5s,7s, 7s,6s;
+}
+.sect6:hover>article:nth-child(5){
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #800080;
+}
+.sect7{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #7B0E69;
+  transition-duration: 1s;
+  transition-property: height,width,border-radius;
+  transition-delay: 0s,1s,6s;
+}
+.sect7:hover{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.sect7>article:first-child{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  background-color: yellow;
+  transition-duration: 1s;
+  transition-property: margin-left,margin-bottom, border-radius,width,height,border-radius;
+  transition-delay: 2s,2s,3s,4s,4s,5s;
+}
+.sect7>article:nth-child(2){
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+  background-color: yellow;
+  transition-duration: 1s;
+  transition-property: margin-right,margin-bottom, border-radius,width,height,border-radius;
+  transition-delay: 2s,2s,3s,4s,4s,5s;
+}
+.sect7:hover>article:first-child{
+  margin-left: 80%;
+  margin-bottom: 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.sect7:hover>article:nth-child(2){
+  margin-right: 80%;
+  margin-bottom: 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.sect7>article:nth-child(3){
+  float: left;
+  margin-left: 45px;
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7B0E69;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-delay: 7s;
+}
+.sect7:hover>article:nth-child(3){
+  background-color: white;
+}
+.sect7>article:nth-child(4){
+  float: left;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7B0E69;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-delay: 7s;
+}
+.sect7:hover>article:nth-child(4){
+  background-color: white;
+}
+.sect7 nav {
+  width: 10px;
+  height: 10px;
+  background-color: #7B0E69;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-delay: 7s;
+}
+.sect7:hover nav{
+  background-color: black;
+}
